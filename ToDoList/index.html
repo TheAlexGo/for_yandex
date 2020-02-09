@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+	<div class="container header">
+		<div class="row">
+			<div class="col-12 col-lg-10">
+				<div class="header_text">Мой To-Do List</div>
+			</div>
+			<div class="col-12 col-lg-2">
+				<button type="button" class="btn btn-danger create" data-toggle="modal" data-target="#exampleModalCenter" >
+				  Добавить задачу
+				</button>
+			</div>	
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div class="">
+				
+				</div>
+		</div>	
+		<div class="col-12 col-lg-6">
+			<div class="active">
+				<h1>В процессе</h1>
+				<!-- Button trigger modal -->
+				
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLongTitle">Создать задачу</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <form name="input_form" class="inp_form">
+						<h3>Введите заголовок</h3>
+						<span class="err"></span>
+						<input id="result" type="text" class="tv" name="header">
+						<h3>Введите описание</h3>
+						<span class="err"></span>
+						<textarea id="result" type="text" class="tv" name="content"></textarea>
+					</form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				        <button id="save" type="button" class="btn btn-primary" onclick="input()">Сохранить</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- Modal-2 -->
+				<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLongTitle">Создать задачу</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <form name="input_form_edit" class="inp_form">
+						<h3>Введите заголовок</h3>
+						<span class="err_edit"></span>
+						<input id="result" type="text" class="tv" name="header">
+						<h3>Введите описание</h3>
+						<span class="err_edit"></span>
+						<textarea id="result" type="text" class="tv" name="content"></textarea>
+					</form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				        <button id="edit" type="button" class="btn btn-primary" >Редактировать</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="content">
+					
+					<ul>
+					<li>
+						<dl>
+
+						</dl>
+					</li>
+				</ul>
+				</div>
+
+				<div class="footer">
+					
+				</div>
+				
+
+			</div>
+				
+
+				
+				
+		</div>
+
+
+		<div class="col-12 col-lg-6">
+			<div class="done">
+				<h1>Выполнено</h1>
+
+				
+			</div>
+			<div class="footer">
+					
+				</div>
+		</div>
+
+
+
+		
+	</div>
+</div>
+
+
+<script src="js/script.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

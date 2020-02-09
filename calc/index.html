@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<style>
+		
+	</style>
+</head>
+<body>
+
+			<div class="calculator">
+				<div class="calc_input">
+					<form name="calc_form">
+						<input class="input2" type="text" name="answer2" value="" readonly> 
+						<input class="input1" type="text" name="answer1" value="0" readonly> 
+					</form>
+				</div>
+				<div class="calc_arena">
+					<div class="calculator_arena">
+						<button class="c_button" value="CE" style="color: #f56600" onclick="ClearEntry()">CE</button>
+						<button class="c_button" value="C" onclick="Clear()">C</button>
+						<button class="c_button" value="<--" onclick="Back()"><--</button>
+						<button class="c_button" value="/" onclick="op('/')">/</button>
+					</div>
+					<div class="calculator_arena">
+						<button class="c_button" value="7" onclick="NumSelect(7)">7</button>
+						<button class="c_button" value="8" onclick="NumSelect(8)">8</button>
+						<button class="c_button" value="9" onclick="NumSelect(9)">9</button>
+						<button class="c_button" value="*" onclick="op('*')">*</button>
+					</div>
+					<div class="calculator_arena">
+						<button class="c_button" value="4" onclick="NumSelect(4)">4</button>
+						<button class="c_button" value="5" onclick="NumSelect(5)">5</button>
+						<button class="c_button" value="6" onclick="NumSelect(6)">6</button>
+						<button class="c_button" value="-" onclick="op('-')">-</button>
+					</div>
+					<div class="calculator_arena">
+						<button class="c_button" value="1" onclick="NumSelect(1)">1</button>
+						<button class="c_button" value="2" onclick="NumSelect(2)">2</button>
+						<button class="c_button" value="3" onclick="NumSelect(3)">3</button>
+						<button class="c_button" value="+" onclick="op('+')">+</button>
+					</div>
+					<div class="calculator_arena">
+						<button class="c_button" value="+/-" onclick="Neg()">+/-</button>
+						<button class="c_button" value="0" onclick="NumSelect(0)">0</button>
+						<button class="c_button" value="." onclick="Decimal()">.</button>
+						<button class="c_button" value="=" onclick="op('=')">=</button>
+					</div>
+				</div>
+			</div>
+
+	
+
+	
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
